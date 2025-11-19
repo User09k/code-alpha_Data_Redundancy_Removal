@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Redundancy Removal - krishna </title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f8ff; text-align: center; padding: 50px; }
+        h1 { color: #2c3e50; }
+        form { margin: 20px auto; width: 300px; }
+        input { display: block; width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 10px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #2980b9; }
+        .msg { margin-top: 20px; font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Data Redundancy Removal - by krishna </h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter your Name" required>
+        <input type="email" name="email" placeholder="Enter your Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if message %}
+        <div class="msg">{{ message }}</div>
+    {% endif %}
+</body>
+</html>
